@@ -5,78 +5,151 @@
 }
 <div class="row">
     <div class="col-lg-12">
-        <h3 class="page-header"><i class="fa fa-files-o"></i> Form Validation</h3>
+        <h3 class="page-header"><i class="fa fa-files-o"></i>License Registration</h3>
         <ol class="breadcrumb">
             <li><i class="fa fa-home"></i><a href="~/Views/Dashboard/Index">Home</a></li>
             <li><i class="icon_document_alt"></i>Licences</li>
-            <li><i class="fa fa-files-o"></i>Mining Licence</li>
+            <li><i class="fa fa-files-o"></i>Licence Registration</li>
         </ol>
     </div>
+</div>
+<div class="row">
+    <div id="message"></div>
 </div>
 <!-- Form validations -->
 <div class="row">
     <div class="col-lg-12">
         <section class="panel">
             <header class="panel-heading">
-                Input mining licences 
+                Register licences
             </header>
             <div class="panel-body">
                 <div class="form">
-                    <form class="form-validate form-horizontal " id="register_form" method="get" action="">
+                    <form class="form-validate form-horizontal " method="post">
                         <div class="form-group ">
-                            <label for="licencename" class="control-label col-lg-2">Name of licence <span class="required">*</span></label>
+                            <label for="leasetype" class="control-label col-lg-2">Lease Types <span class="required">*</span></label>
                             <div class="col-lg-10">
-                                <input class=" form-control" id="licencename" name="licencename" type="text" />
+                                <select class="form-control m-bot15" name="leasetype" id="leasetype">
+                                    <option>Select Lease Type</option>
+                                    <option>Trading Licence</option>
+                                    <option>Mining Licence</option>
+                                    <option>Work Permit</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label for="relevantloc" class="control-label col-lg-2">Relevant Location <span class="required">*</span></label>
+                            <label for="referencenum" class="control-label col-lg-2">Reference Number <span class="required">*</span></label>
                             <div class="col-lg-10">
-                                <input class=" form-control" id="relevantloc" name="relevantloc" type="text" />
+                                <input class=" form-control" id="referencenum" name="referencenum" type="text" />
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label for="issuingauthority" class="control-label col-lg-2">Isuing Authority <span class="required">*</span></label>
+                            <label for="issuingauthority" class="control-label col-lg-2">Issuing Authority <span class="required">*</span></label>
                             <div class="col-lg-10">
                                 <input class=" form-control" id="issuingauthority" name="issuingauthority" type="text" />
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label for="dateofgrant" class="control-label col-lg-2">Date of Grant <span class="required">*</span></label>
+                            <label for="technicalscope" class="control-label col-lg-2">Technical Scope <span class="required">*</span></label>
                             <div class="col-lg-10">
-                                <input class=" form-control" id="dateofgrant" name="dateofgrant" type="date" />
+                                <input class=" form-control" id="technicalscope" name="technicalscope" type="text" />
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label for="dateofexpiry" class="control-label col-lg-2">Date of Expiry <span class="required">*</span></label>
+                            <label for="geographicalscope" class="control-label col-lg-2">Geographical Scope<span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="geographicalscope" name="geographicalscope" type="text" />
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="issuedate" class="control-label col-lg-2">Issue Date<span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="issuedate" name="issuedate" type="date" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="dateofexpiry" class="control-label col-lg-2">Expiry Date <span class="required">*</span></label>
                             <div class="col-lg-10">
                                 <input class=" form-control" id="dateofexpiry" name="dateofexpiry" type="date" />
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label for="monetaryobligation" class="control-label col-lg-2">Monetary obligation Imposed by Grant <span class="required">*</span></label>
+                            <label for="LicenceAcquisitionCost" class="control-label col-lg-2">Licence acquisition cost<span class="required">*</span></label>
                             <div class="col-lg-10">
-                                <input class=" form-control" id="monetaryobligation" name="monetaryobligation" type="text" />
+                                <input class=" form-control" id="LicenceAcquisitionCost" value="0" name="LicenceAcquisitionCost" type="number" />
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label for="relevantcomment" class="control-label col-lg-2">Relevant comment <span class="required">*</span></label>
+                            <label for="RenewalCost" class="control-label col-lg-2">Renewal Cost<span class="required">*</span></label>
                             <div class="col-lg-10">
-                                <input class=" form-control" id="relevantcomment" name="relevantcomment" type="text" />
+                                <input class=" form-control" id="RenewalCost" value="0" name="RenewalCost" type="number" />
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label for="leaddepartment" class="control-label col-lg-2">Lead Department Responsible for renewal <span class="required">*</span></label>
+                            <label for="OtherRelatedCost" class="control-label col-lg-2">Other Related Cost<span class="required">*</span></label>
                             <div class="col-lg-10">
-                                <input class=" form-control" id="leaddepartment" name="leaddepartment" type="text" />
+                                <input class=" form-control" value="0" id="OtherRelatedCost" name="OtherRelatedCost" type="number" />
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label for="supportdepartment" class="control-label col-lg-2">Secondary/Support Department <span class="required">*</span></label>
+                            <label for="ResponsibleDepartment" class="control-label col-lg-2">Responsible Department <span class="required">*</span></label>
                             <div class="col-lg-10">
-                                <input class=" form-control" id="supportdepartment" name="supportdepartment" type="text" />
+                                <select class="form-control m-bot15" name="ResponsibleDepartment" id="ResponsibleDepartment">
+                                    <option>Select Responsible Departments</option>
+                                    @if (ViewBag.UserDepartments != null)
+                                    {
+                                        foreach (var department in ViewBag.UserDepartments)
+                                        {
+                                            <option value="@department.departmentname">@department.departmentname</option>
+                                        }
+                                    }
+                                </select>
                             </div>
                         </div>
+                        <div class="form-group ">
+                            <label for="ImpactedDepartments" class="control-label col-lg-2">Impacted Department <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <select class="form-control m-bot15" name="ImpactedDepartments" id="ImpactedDepartments">
+                                    <option>Select Support Departments</option>
+                                    @if (ViewBag.UserDepartments != null)
+                                    {
+                                        foreach (var department in ViewBag.UserDepartments)
+                                        {
+                                            <option value="@department.departmentname">@department.departmentname</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="TermsAndConditions" class="control-label col-lg-2">Terms And Conditions <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <select class="form-control m-bot15" name="TermsAndConditions" id="TermsAndConditions">
+                                    <option>Select Terms and Conditions</option>
+                                    <option value="N/A">N/A</option>
+                                    <option value="None">Quatery Reports</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="AverageRenewalTime" class="control-label col-lg-2">Terms And Conditions <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <select class="form-control m-bot15" name="AverageRenewalTime" id="AverageRenewalTime">
+                                    <option>Select Average renewal time</option>
+                                    <option>1 month</option>
+                                    <option>2 month</option>
+                                    <option>3 month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="RemarksAndComments" class="control-label col-lg-2">Remarks And Comments<span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="RemarksAndComments" name="RemarksAndComments" type="text" />
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <div class="col-lg-offset-2 col-lg-10">
                                 <button class="btn btn-primary" type="submit">Save</button>
@@ -89,3 +162,23 @@
         </section>
     </div>
 </div>
+@if (ViewBag.Error != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            var container = $("#message");
+            container.html("@ViewBag.Error");
+            container.attr("style", "color: red;text-align: center;;"); //add a style attribute
+            };
+    </script>
+}
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            var container = $("#message");
+            container.html("@ViewBag.Message");
+            container.attr("style", "color: green;text-align: center;;"); //add a style attribute
+            };
+    </script>
+}

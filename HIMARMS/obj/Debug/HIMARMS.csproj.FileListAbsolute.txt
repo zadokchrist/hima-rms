@@ -69,3 +69,10 @@ D:\Projects\working directory\hima-rms\HIMARMS\obj\Debug\HIMARMS.csproj.CoreComp
 D:\Projects\working directory\hima-rms\HIMARMS\obj\Debug\HIMARMS.csproj.CopyComplete
 D:\Projects\working directory\hima-rms\HIMARMS\obj\Debug\HIMARMS.dll
 D:\Projects\working directory\hima-rms\HIMARMS\obj\Debug\HIMARMS.pdb
+D:\Projects\working directory\hima-rms\HIMARMS\bin\HIMARMSLLOGIC.dll
+D:\Projects\working directory\hima-rms\HIMARMS\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\working directory\hima-rms\HIMARMS\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Projects\working directory\hima-rms\HIMARMS\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\Projects\working directory\hima-rms\HIMARMS\bin\HIMARMSLLOGIC.pdb
+D:\Projects\working directory\hima-rms\HIMARMS\bin\HIMARMSLLOGIC.dll.config
+D:\Projects\working directory\hima-rms\HIMARMS\obj\Debug\HIMARMS.csprojAssemblyReference.cache

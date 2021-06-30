@@ -1,0 +1,10 @@
+D:\Projects\working directory\hima-rms\HIMARMSLLOGIC\bin\Debug\HIMARMSLLOGIC.dll.config
+D:\Projects\working directory\hima-rms\HIMARMSLLOGIC\bin\Debug\HIMARMSLLOGIC.dll
+D:\Projects\working directory\hima-rms\HIMARMSLLOGIC\bin\Debug\HIMARMSLLOGIC.pdb
+D:\Projects\working directory\hima-rms\HIMARMSLLOGIC\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Projects\working directory\hima-rms\HIMARMSLLOGIC\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\working directory\hima-rms\HIMARMSLLOGIC\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Projects\working directory\hima-rms\HIMARMSLLOGIC\obj\Debug\HIMARMSLLOGIC.csproj.CoreCompileInputs.cache
+D:\Projects\working directory\hima-rms\HIMARMSLLOGIC\obj\Debug\HIMARMSLLOGIC.csproj.CopyComplete
+D:\Projects\working directory\hima-rms\HIMARMSLLOGIC\obj\Debug\HIMARMSLLOGIC.dll
+D:\Projects\working directory\hima-rms\HIMARMSLLOGIC\obj\Debug\HIMARMSLLOGIC.pdb

@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HIMARMSLLOGIC">
+      <HintPath>..\HIMARMSLLOGIC\bin\Debug\HIMARMSLLOGIC.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -474,6 +477,7 @@
     <Content Include="img\customSelect-arrow.gif" />
     <Content Include="img\geekslabs.png" />
     <Content Include="img\Germany.png" />
+    <Content Include="img\himacementlogo.PNG" />
     <Content Include="img\icons\line-icon-c.png" />
     <Content Include="img\icons\line-icon-hover.png" />
     <Content Include="img\icons\line-icon.png" />
@@ -560,7 +564,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\DepartmentsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MiningLicenseController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -630,6 +637,12 @@
     <Content Include="Views\Shared\_SideBar.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
     <Content Include="Views\MiningLicense\Index.cshtml" />
+    <Content Include="Views\Departments\Index.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\MiningLicense\ViewLicenses.cshtml" />
+    <Content Include="Views\Departments\DepartmentReport.cshtml" />
+    <Content Include="Views\User\UserReport.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

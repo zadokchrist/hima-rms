@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIMARMS", "HIMARMS.csproj", "{1A6DC611-39D7-4335-B281-2482C0787035}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIMARMSLLOGIC", "..\HIMARMSLLOGIC\HIMARMSLLOGIC.csproj", "{83A28516-BA9F-4CFA-8DAE-9F884200DD7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1A6DC611-39D7-4335-B281-2482C0787035}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A6DC611-39D7-4335-B281-2482C0787035}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A6DC611-39D7-4335-B281-2482C0787035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A28516-BA9F-4CFA-8DAE-9F884200DD7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A28516-BA9F-4CFA-8DAE-9F884200DD7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A28516-BA9F-4CFA-8DAE-9F884200DD7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A28516-BA9F-4CFA-8DAE-9F884200DD7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

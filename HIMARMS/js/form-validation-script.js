@@ -1,8 +1,8 @@
 var Script = function () {
 
-    $.validator.setDefaults({
-        submitHandler: function() { alert("submitted!"); }
-    });
+    //$.validator.setDefaults({
+    //    submitHandler: function() { alert("submitted!"); }
+    //});
 
     $().ready(function() {
         // validate the comment form when it is submitted
@@ -76,6 +76,9 @@ var Script = function () {
                 supportdepartment: {
                     required: true
                 },
+                departmentname: {
+                    required: true
+                },
                 agree: "required"
             },
             messages: {                
@@ -131,6 +134,9 @@ var Script = function () {
                 },
                 supportdepartment: {
                     required: "Please select support department."
+                },
+                departmentname: {
+                    required: "Please Enter Department Name"
                 },
                 email: "Please enter a valid email address.",
                 agree: "Please accept our terms & condition."
