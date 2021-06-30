@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="page-header"><i class="fa fa-files-o"></i> Form Validation</h3>
+        <ol class="breadcrumb">
+            <li><i class="fa fa-home"></i><a href="~/Views/Dashboard/Index">Home</a></li>
+            <li><i class="icon_document_alt"></i>Licences</li>
+            <li><i class="fa fa-files-o"></i>Mining Licence</li>
+        </ol>
+    </div>
+</div>
+<!-- Form validations -->
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Input mining licences 
+            </header>
+            <div class="panel-body">
+                <div class="form">
+                    <form class="form-validate form-horizontal " id="register_form" method="get" action="">
+                        <div class="form-group ">
+                            <label for="licencename" class="control-label col-lg-2">Name of licence <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="licencename" name="licencename" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="relevantloc" class="control-label col-lg-2">Relevant Location <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="relevantloc" name="relevantloc" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="issuingauthority" class="control-label col-lg-2">Isuing Authority <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="issuingauthority" name="issuingauthority" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="dateofgrant" class="control-label col-lg-2">Date of Grant <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="dateofgrant" name="dateofgrant" type="date" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="dateofexpiry" class="control-label col-lg-2">Date of Expiry <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="dateofexpiry" name="dateofexpiry" type="date" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="monetaryobligation" class="control-label col-lg-2">Monetary obligation Imposed by Grant <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="monetaryobligation" name="monetaryobligation" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="relevantcomment" class="control-label col-lg-2">Relevant comment <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="relevantcomment" name="relevantcomment" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="leaddepartment" class="control-label col-lg-2">Lead Department Responsible for renewal <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="leaddepartment" name="leaddepartment" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="supportdepartment" class="control-label col-lg-2">Secondary/Support Department <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="supportdepartment" name="supportdepartment" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button class="btn btn-primary" type="submit">Save</button>
+                                <button class="btn btn-default" type="button">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
