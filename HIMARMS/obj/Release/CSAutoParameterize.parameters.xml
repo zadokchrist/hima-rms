@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="connectionstring-Web.config Connection String" description="connectionstring Connection String used in web.config by the application to access the database." defaultValue="Data Source=3.130.127.128;Initial Catalog=HIMARMS;User id=yassako;password=T3rr1613;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\working\ directory\\hima-rms\\HIMARMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='connectionstring']/@connectionString" />
+  </parameter>
+</parameters>
