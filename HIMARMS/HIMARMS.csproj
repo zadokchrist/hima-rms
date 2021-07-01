@@ -643,6 +643,7 @@
     <Content Include="Views\Departments\DepartmentReport.cshtml" />
     <Content Include="Views\User\UserReport.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="page-header"><i class="fa fa-files-o"></i>User Registration</h3>
+        <ol class="breadcrumb">
+            <li><i class="fa fa-home"></i><a href="~/Dashboard/Index">Home</a></li>
+            <li><i class="icon_document_alt"></i>User Management</li>
+            <li><i class="fa fa-files-o"></i>User Registration</li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div id="message"></div>
+</div>
+<!-- Form validations -->
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Register User
+            </header>
+            <div class="panel-body">
+                <div class="form">
+                    <form class="form-validate form-horizontal " method="post">
+                        <div class="form-group ">
+                            <label for="fullname" class="control-label col-lg-2">Full name <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="fullname" name="fullname" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="address" class="control-label col-lg-2">Address <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class=" form-control" id="address" name="address" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="username" class="control-label col-lg-2">Username <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class="form-control " id="username" name="username" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="email" class="control-label col-lg-2">Email <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <input class="form-control " id="email" name="email" type="email" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="userdepartment" class="control-label col-lg-2">User Department <span class="required">*</span></label>
+                            <div class="col-lg-10">
+                                <select class="form-control m-bot15" name="userdepartment" id="userdepartment">
+                                    <option>Select User Department</option>
+                                    @if (ViewBag.UserDepartments != null)
+                                    {
+                                        foreach (var department in ViewBag.UserDepartments)
+                                        {
+                                            <option value="@department.RecordId">@department.departmentname</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button class="btn btn-primary" type="submit">Save</button>
+                                <button class="btn btn-default" type="button">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- page end-->
+@if (ViewBag.Error != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            var container = $("#message");
+            container.html("@ViewBag.Error");
+            container.attr("style", "color: red;text-align: center;;"); //add a style attribute
+            };
+    </script>
+}
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            var container = $("#message");
+            container.html("@ViewBag.Message");
+            container.attr("style", "color: green;text-align: center;;"); //add a style attribute
+            };
+    </script>
+}
